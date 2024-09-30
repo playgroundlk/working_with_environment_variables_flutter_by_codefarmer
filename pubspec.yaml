@@ -1,0 +1,20 @@
+name: working_with_environment_variables_flutter_by_codefarmer
+description: "In this video, we will see how to setup and use environment variables with Flutter. We will not be using any package to handle this."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
