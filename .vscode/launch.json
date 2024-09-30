@@ -5,18 +5,32 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "working_with_environment_variables_flutter_by_codefarmer",
+      "name": "development",
       "request": "launch",
-      "type": "dart"
+      "type": "dart",
+      "toolArgs": [
+        "--dart-define-from-file",
+        "lib/env/development.env"
+      ]
     },
     {
-      "name": "working_with_environment_variables_flutter_by_codefarmer (profile mode)",
+      "name": "production",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "toolArgs": [
+        "--dart-define-from-file",
+        "lib/env/production.env"
+      ]
+    },
+    {
+      "name": "working_with_environment_variables_flutter (profile mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
-      "name": "working_with_environment_variables_flutter_by_codefarmer (release mode)",
+      "name": "working_with_environment_variables_flutter (release mode)",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
